@@ -1,5 +1,4 @@
-# 基础语法
-## 定义 
+# 定义 
 ```swift
 struct Resolution {
     var width = 0
@@ -12,21 +11,20 @@ class VideoMode {
     var name: String?
 }
 ```
-## 初始化
+# 初始化
 ```swift
 let someResolution1 = Resolution()
 let someResolution2 = Resolution(width: 640, height: 480) // 结构体默认生成全成员（memberwise）初始化方法
 let someVideoMode = VideoMode()
 ```
-## 属性访问
+# 属性访问
 ```swift
 someVideoMode.resolution.width = 1280
 print("The width of someVideoMode is now \(someVideoMode.resolution.width)")
 // Prints "The width of someVideoMode is now 1280"
 ```
 
-# 区别
-## 相同点
+# 相同点
 * 定义属性
 * 定义方法
 * 支持角标语法（subscript syntax）
@@ -34,7 +32,7 @@ print("The width of someVideoMode is now \(someVideoMode.resolution.width)")
 * 支持扩展（Extensions）
 * 支持协议（Protocols）
 
-## 类的额外特点
+# 类的额外特点
 * 支持继承和类型转化（Type Casting）
 * 支持反初始化（Deinitialization）
 * 支持ARC
@@ -49,6 +47,7 @@ var cinema = hd
 cinema.width = 2048
 ```
 ![](https://docs.swift.org/swift-book/_images/sharedStateStruct_2x.png)
+
 * 类是引用类型
 ```swift
 // before
