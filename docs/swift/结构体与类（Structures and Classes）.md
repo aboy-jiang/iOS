@@ -49,7 +49,6 @@ cinema.width = 2048
 ![](https://docs.swift.org/swift-book/_images/sharedStateStruct_2x.png)
 
 * 类是引用类型
-
 ```swift
 // before
 let tenEighty = VideoMode()
@@ -62,5 +61,14 @@ tenEighty.frameRate = 25.0
 let alsoTenEighty = tenEighty
 alsoTenEighty.frameRate = 30.0
 ```
-
 ![](https://docs.swift.org/swift-book/_images/sharedStateClass_2x.png)
+
+## 结构体和类的选择
+* 默认使用结构体
+* 涉及到与OC的引用时使用类
+* 当涉及到继承时候，优先考虑使用结构和协议方式实现
+* 单例设计使用类
+
+
+
+
