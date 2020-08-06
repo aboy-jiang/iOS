@@ -1,3 +1,6 @@
+title: 结构体与类（Structures and Classes）
+description: 结构体与类的基本概念、用法、选择
+
 ## 定义 
 ```swift
 struct Resolution {
